@@ -1,0 +1,94 @@
+@import "../../../../../../global_css/variables/variables";
+@import "../../../../../../global_css/mixins/mixins";
+.SlidingContainer {
+	width: 100%;
+	min-height: 45rem;
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	@include respond(tab-port) {
+		min-height: 55rem;
+		// margin-bottom: 2rem;
+	}
+	@include respond(phone-mid) {
+		margin-bottom: 5rem;
+		min-height: 55rem;
+	}
+	@include respond(tab-port) {
+		margin-bottom: 4rem;
+	}
+}
+
+.LeftNavigate,
+.RightNavigate {
+	height: 100%;
+	position: absolute;
+	width: 8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.LeftNavigate {
+	left: 0;
+	top: 0;
+}
+
+.RightNavigate {
+	right: 0;
+	top: 0;
+}
+
+.LeftNavigate:hover,
+.RightNavigate:hover {
+	background-color: rgba($color-black, 0.15);
+	cursor: pointer;
+}
+
+.FlexBoxContainer {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 100%;
+}
+
+.NavigatorIconClass {
+	font-size: 3rem;
+	color: #fff;
+	transform: scale(1, 1.5);
+	transition: all 0.5s ease;
+}
+
+.NavigatorIconClass:hover {
+	transform: scale(1.8, 2.7);
+}
+
+.SwipeEffectHideToLeft,
+.SwipeEffectHideToRight {
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.SwipeEffectHideToLeft {
+	transform: translateX(-100%);
+}
+.SwipeEffectHideToRight {
+	transform: translateX(100%);
+}
+
+.SwipeEffectShowToLeft,
+.SwipeEffectShowToRight {
+	opacity: 1;
+	transition: all 0.5s ease;
+	transform: translate(-50%, -50%);
+}
+
+.TransformHideClassToRight {
+	transform: translateX(100%);
+	opacity: 0;
+}
+
+.TransformHideClassToLeft {
+	transform: translateX(-100%);
+	opacity: 0;
+}

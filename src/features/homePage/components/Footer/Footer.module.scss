@@ -1,0 +1,58 @@
+@import "../../../../global_css/variables/variables";
+
+.Footer {
+	background: $footer-background-color;
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr;
+	// margin-top: 1.5rem;
+}
+
+.GotoTop {
+	text-align: center;
+	margin-top: 2rem;
+	transition: all 0.3s ease;
+
+	&:hover {
+		transform: scale(1.5);
+		cursor: pointer;
+	}
+}
+
+.IconStyling {
+	color: $footer-icon-colors;
+}
+
+.SocialHandles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.networkIcon {
+	margin: 0 1rem;
+	font-size: 4rem;
+	transition: all 0.3s ease;
+	color: $footer-icon-colors;
+
+	&:hover {
+		transform: scale(1.2);
+		cursor: pointer;
+	}
+}
+.RulerLine {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+	margin: 1rem auto;
+	border: 0;
+	width: 50%;
+	border-top: 2px solid rgba($footer-icon-colors, 0.5);
+}
+
+.CopyRightContent {
+	text-align: center;
+	color: $footer-icon-colors;
+	font-size: 1.2rem;
+	margin-top: -2rem;
+	margin-bottom: 1rem;
+}
