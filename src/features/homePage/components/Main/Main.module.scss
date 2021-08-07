@@ -698,3 +698,7 @@
 .ElementHeading {
   color: rgba($color-black, 1);
 }
+.RowSocialMediaWrapper {
+  display: flex;
+  flex-direction: row;
+}

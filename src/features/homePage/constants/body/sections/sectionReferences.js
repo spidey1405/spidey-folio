@@ -50,6 +50,14 @@ export const sectionReferences = {
             color: 'blue',
           }),
         },
+        {
+          href: 'https://www.linkedin.com/',
+          id: 'userTestimonials__socialHandle' + nanoid(),
+          icon: getIcon(iconsMap.linkedin, {
+            ...socialHandleSize,
+            color: 'blue',
+          }),
+        },
       ],
       content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porta velit nibh, volutpat condimentum ex ornare a. Nam turpis augue, faucibus id ligula ut, rhoncus euismod ipsum. 
 	  Quisque malesuada velit in ligula blandit, at pellentesque sem elementum. Nulla condimentum ornare leo in porttitor. Donec ut augue porta, vestibulum massa eget.`,

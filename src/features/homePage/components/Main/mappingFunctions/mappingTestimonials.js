@@ -44,7 +44,7 @@ const getSocialHandles = (socialDetails, classes) => {
       <div className={classes['social_icon']}>{element.icon}</div>
     </a>
   ));
-  return <div className={classes['rowElement']}>{socials}</div>;
+  return <div className={classes['RowSocialMediaWrapper']}>{socials}</div>;
 };
 
 export const mapTestimonials = (testimonialComponent, classes) => {
