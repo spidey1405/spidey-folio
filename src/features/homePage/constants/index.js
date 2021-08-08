@@ -1,7 +1,7 @@
-export { topHeaders } from "./header/topHeader";
+export { topHeaders } from './header/topHeader';
 
-export { mainContent } from "./body/mainContent";
+export { mainContent } from './body/mainContent';
 
-export { navItemsHeader } from "./miscMappings";
+export { navItemsHeader } from './miscMappings';
 
-export { footerData, githubButtons } from "./footer";
+export { footerData } from './footer';
