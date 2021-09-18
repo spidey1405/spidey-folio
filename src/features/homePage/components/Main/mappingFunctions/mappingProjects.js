@@ -126,7 +126,7 @@ const mapProjects = (projectComponents, classes) => {
 	);
 };
 
-export const map_Projects = (sectionProjects, classes) => {
+export const MapProjects = ({ sectionProjects, classes }) => {
 	if (!sectionProjects.showSection) return null;
 	const projectSections = mapProjects(
 		sectionProjects.projectComponents,

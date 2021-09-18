@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./Main.module.scss";
 import {
-	mappingAbout,
-	mapFeaturesSection,
-	map_Projects,
-	mapTestimonials,
-	mapExperienceandCocurricular,
+	MappingAbout,
+	MapFeaturesSection,
+	MapProjects,
+	MapTestimonials,
+	MapExperienceandCocurricular,
 } from "./mappingFunctions/mapping";
 
 import {
@@ -24,28 +24,19 @@ export default function Main() {
 		sectionReferences,
 	} = useSelector(getMainContent);
 
-	//About Section
-	const aboutSection = mappingAbout(sectionAbout, classes);
-
-	//Features Section
-	const featuresSection = mapFeaturesSection(sectionFeatures, classes);
-
-	//Project Section
-	const projectsSection = map_Projects(sectionProjects, classes);
-
-	//Testimonial Sections
-	const testimonials = mapTestimonials(sectionReferences, classes);
-
-	//Experience Section
-	const experiences = mapExperienceandCocurricular(sectionExperiences, classes);
-
 	return (
 		<main className={classes.mainBody}>
-			{aboutSection}
-			{featuresSection}
-			{projectsSection}
-			{testimonials}
-			{experiences}
+			<MappingAbout mainContent={sectionAbout} classes={classes} />
+			<MapFeaturesSection sectionFeatures={sectionFeatures} classes={classes} />
+			<MapProjects sectionProjects={sectionProjects} classes={classes} />
+			<MapTestimonials
+				testimonialComponent={sectionReferences}
+				classes={classes}
+			/>
+			<MapExperienceandCocurricular
+				exprerienceContent={sectionExperiences}
+				classes={classes}
+			/>
 		</main>
 	);
 }

@@ -1,5 +1,5 @@
-export { mappingAbout } from "./mappingAbout";
-export { mapFeaturesSection } from "./mappingFeatures";
-export { map_Projects } from "./mappingProjects";
-export { mapTestimonials } from "./mappingTestimonials";
-export { mapExperienceandCocurricular } from "./mappingExperience";
+export { MappingAbout } from "./mappingAbout";
+export { MapFeaturesSection } from "./mappingFeatures";
+export { MapProjects } from "./mappingProjects";
+export { MapTestimonials } from "./mappingTestimonials";
+export { MapExperienceandCocurricular } from "./mappingExperience";

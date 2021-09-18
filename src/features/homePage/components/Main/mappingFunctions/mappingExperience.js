@@ -31,7 +31,10 @@ const getExperienceContent = (experienceElements, classes) => {
 	});
 };
 
-export const mapExperienceandCocurricular = (exprerienceContent, classes) => {
+export const MapExperienceandCocurricular = ({
+	exprerienceContent,
+	classes,
+}) => {
 	if (!exprerienceContent.showSection) return null;
 	const sectionHeading = getMainHeading(
 		exprerienceContent.heading,

@@ -44,7 +44,7 @@ const mapFeatures = (sections, classes) => {
 	return result;
 };
 
-export const mapFeaturesSection = (sectionFeatures, classes) => {
+export const MapFeaturesSection = ({ sectionFeatures, classes }) => {
 	if (!sectionFeatures.showSection) return null;
 	const keySections = mapFeatures(sectionFeatures.sections, classes);
 	return (
